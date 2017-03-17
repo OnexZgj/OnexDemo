@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tran_black"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/gray"
+        android:padding="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_shape"
+            android:drawableLeft="@mipmap/search"
+            android:drawablePadding="5dp"
+            android:hint="序列号、型号"
+            android:paddingLeft="10dp" />
+
+    </LinearLayout>
+
+
+    <!--<Spinner-->
+    <!--android:id="@+id/sp_vp_type"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:layout_margin="3dp"-->
+    <!--android:background="@drawable/round_shape"-->
+    <!--android:spinnerMode="dialog"-->
+    <!--android:clickable="true"-->
+    <!--&gt;</Spinner>-->
+
+    <!--<Spinner-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:entries="@array/type"-->
+    <!--android:layout_margin="3dp"-->
+    <!--android:background="@drawable/round_shape"-->
+    <!--&gt;</Spinner>-->
+
+
+    <!--<Spinner-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:entries="@array/type"-->
+    <!--android:layout_margin="3dp"-->
+    <!--android:background="@drawable/round_shape"-->
+    <!--&gt;</Spinner>-->
+
+    <!--<Spinner-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:entries="@array/type"-->
+    <!--android:layout_margin="3dp"-->
+    <!--android:background="@drawable/round_shape"-->
+    <!--&gt;</Spinner>-->
+
+    <!--<Spinner-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:entries="@array/type"-->
+    <!--android:background="@drawable/round_shape"-->
+    <!--android:layout_margin="3dp"-->
+    <!--&gt;</Spinner>-->
+
+
+    <TextView
+        android:id="@+id/et_pop_device_type"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/round_shape"
+        android:gravity="center"
+        android:text="请输入设备类型"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/et_pop_entry_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/round_shape"
+        android:gravity="center"
+        android:text="请输入项目名称"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/et_pop_producer"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/round_shape"
+        android:gravity="center"
+        android:text="请输入生产厂商"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/et_pop_supply"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/round_shape"
+        android:gravity="center"
+        android:text="请输入供应商"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/et_pop_room"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/round_shape"
+        android:gravity="center"
+        android:text="请输入库房"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_pop_time1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/round_shape"
+        android:gravity="center"
+        android:text="2017-03-16"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_pop_time2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/round_shape"
+        android:gravity="center"
+        android:text="2017-03-16"
+        android:textColor="@color/black" />
+
+
+    <Button
+        android:id="@+id/btn_pop_ok"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="6dp"
+        android:text="确定" />
+
+
+</LinearLayout>

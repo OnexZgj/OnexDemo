@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/iv_am_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/add" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#000" />
+
+        <ImageView
+            android:id="@+id/iv_am_scan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/scan" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#000" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="设备管理" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#000" />
+
+        <ImageView
+            android:id="@+id/iv_am_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/setting" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#000" />
+
+        <ImageView
+            android:id="@+id/iv_am_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/search" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swl_adm_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.esint.demo.onexdemo.view.PullToRefreshListView
+                android:id="@+id/lv_am_lists"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"/>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_container_pop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/gray"
+                android:padding="10dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_shape"
+                    android:drawableLeft="@mipmap/search"
+                    android:drawablePadding="5dp"
+                    android:hint="序列号、型号"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/sp_adm_type"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/round_shape"
+                android:dropDownVerticalOffset="50dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/type"
+                style="@android:style/Widget.Spinner"></Spinner>
+
+            <Spinner
+                android:id="@+id/sp_adm_entry_name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/round_shape"
+                android:spinnerMode="dropdown"
+                android:entries="@array/type"></Spinner>
+
+
+            <Spinner
+                android:id="@+id/sp_adm_producer"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/round_shape"
+                android:spinnerMode="dropdown"
+                android:entries="@array/type"></Spinner>
+
+            <Spinner
+                android:id="@+id/sp_adm_supply"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/round_shape"
+                android:spinnerMode="dropdown"
+                android:entries="@array/type"></Spinner>
+
+            <Spinner
+                android:id="@+id/sp_adm_room"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/round_shape"
+                android:spinnerMode="dropdown"
+                android:entries="@array/type"></Spinner>
+
+            <TextView
+                android:id="@+id/tv_adm_time1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/round_shape"
+                android:gravity="center"
+                android:text="2017-03-16"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_adm_time2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/round_shape"
+                android:gravity="center"
+                android:text="2017-03-16"
+                android:textColor="@color/black" />
+
+
+            <Button
+                android:id="@+id/btn_adm_ok"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="6dp"
+                android:text="确定" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type">
+        <item>请输入设备类型</item>
+        <item>服务器</item>
+        <item>储存设备 </item>
+        <item>网路设备</item>
+        <item>安全设备</item>
+    </string-array>
+</resources>
